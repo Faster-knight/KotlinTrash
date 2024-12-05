@@ -18,6 +18,7 @@ export default function App() {
             }>
           <StackNavigator.Navigator initialRouteName='/login' screenOptions={{headerShown: false, fullScreenGestureEnabled: true}}>
               <StackNavigator.Screen name='/login' component={AuthPage}/>
+              <StackNavigator.Screen name="/login/code" component={AuthPage} />
           </StackNavigator.Navigator>
         </ApplicationContext.Provider>
       </NavigationContainer>
